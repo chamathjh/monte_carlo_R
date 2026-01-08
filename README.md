@@ -1,4 +1,7 @@
-````markdown
+Here’s a **clean, professional `README.md`** you can drop straight into your GitHub repo. It explains the idea, the code, and how to run it—exactly what interviewers and reviewers expect.
+
+---
+
 # 🎯 Monte Carlo Simulation to Estimate π (Pi)
 
 This repository contains an R script that uses a **Monte Carlo simulation** to estimate the value of π by randomly throwing points (“darts”) into a square and counting how many land inside a unit circle.
@@ -7,37 +10,40 @@ This repository contains an R script that uses a **Monte Carlo simulation** to e
 
 ## 📌 Idea Behind the Simulation
 
-- Generate random points uniformly in the square \([-1, 1] \times [-1, 1]\)
-- A point lies inside the unit circle if:
+* Generate random points uniformly in the square ([-1, 1] \times [-1, 1])
+* A point lies inside the unit circle if:
 
-\[
+[
 x^2 + y^2 \leq 1
-\]
+]
 
-- The ratio of points inside the circle to total points approximates:
+* The ratio of points inside the circle to total points approximates:
 
-\[
+[
 \frac{\pi r^2}{(2r)^2} = \frac{\pi}{4}
-\]
+]
 
 So:
-
-\[
+[
 \pi \approx 4 \times \frac{\text{points inside circle}}{\text{total points}}
-\]
+]
 
 ---
 
 ## 🧮 What the Code Does
 
 1. **Generates random points**
-   - Uses `runif()` to draw random \(x\) and \(y\) values
+
+   * Uses `runif()` to draw random (x) and (y) values
 2. **Counts points inside the unit circle**
-   - Computes \(x^2 + y^2\)
+
+   * Computes (x^2 + y^2)
 3. **Estimates π**
-   - Uses the Monte Carlo ratio
+
+   * Uses the Monte Carlo ratio
 4. **Visualizes convergence**
-   - Animates how points accumulate inside the square
+
+   * Animates how points accumulate inside the square
 
 ---
 
@@ -55,7 +61,7 @@ indexes_darts_in_circle <- which(sum_squares <= 1)
 num_darts_in_circle <- length(indexes_darts_in_circle)
 
 print(4 * num_darts_in_circle / num_darts)
-````
+```
 
 ### Animation of the Simulation
 
@@ -117,5 +123,5 @@ You can:
 This project is for educational purposes.
 Feel free to use, modify, and share.
 
-```
-```
+ and tests
+ 
